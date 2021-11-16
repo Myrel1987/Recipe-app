@@ -18,10 +18,10 @@ const App = () => {
       console.log(result)
      }
    return (
-      <div>
-         <h1>Food Searching App</h1>
+      <div className="App">
+         <h1 onClick={getData}>Food Searching App</h1>
       </div>
    );
 };
 
-export default App
+export default App;
