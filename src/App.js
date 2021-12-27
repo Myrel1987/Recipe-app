@@ -30,9 +30,9 @@ function App() {
     }
   };
 
-  const onChange = e => setQuery(e.target.value);
+  const onChange = (e) => setQuery(e.target.value);
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     getData();
   };
@@ -54,7 +54,7 @@ function App() {
       </form>
       <div className="recipes">
         {recipes !== [] &&
-          recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
+          recipes.map((recipe) => <Recipe key={uuidv4()} recipe={recipe} />)}
       </div>
     </div>
   );
